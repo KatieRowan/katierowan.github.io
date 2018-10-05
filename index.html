@@ -1,60 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Katie Rowan</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="Katie Rowan UX/UI Design Portfolio">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Katie Rowan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body class="landing">
-  <nav class="navbar"> <!--nav bar-->
-    <h4>Work</h4>
-    <h4>About</h4>
-    <h4>Contact</h4>
+
+<body>
+  <nav class="row"> <!--nav bar-->
+    <div class="col-11">
+      <ul>
+        <li class="nav-list"><a href="contact.html" class="nav-item">Contact</a></li>
+        <li class="nav-list"><a href="about.html" class="nav-item">About</a></li>
+        <li class="nav-list"><a href="index.html" class="nav-item">Work</a></li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
   </nav>
-  <section class="hero-content"> <!--hero content-->
-    <img src="assets/kr_logo_v2.png" alt="Katie Rowan logo" class="logo">
-    <h1>UX/UI Designer | Washington, D.C.</h1>
+  <section class="row"> <!--hero logo-->
+    <div class="col-2"></div>
+    <div class="col-8">
+      <img src="assets/kr_logo_v2.png" alt="Katie Rowan logo" class="logo">
+    </div>
+    <div class="col-2"></div>
   </section>
-  <section> <!--projects-->
-    <div> <!--Primary-->
+  <section class="row"> <!--Katie description-->
+    <div class="col-2"></div>
+    <div class="col-8">
+      <h1>UX/UI Designer | Washington, D.C.</h1>
+    </div>
+    <div class="col-2"></div>
+  </section>
+  <section class="row"> <!--project 1-->
+    <div class="col-1"></div>
+    <div class="col-10"> <!--Primary-->
       <a href="index.html" class="project">
-        <img src="assets/primary_app_v2.png" alt="Primary Mobile App">
+        <img src="assets/primary_app_v2.png" alt="Primary Mobile App" class="project-preview">
       </a>
       <h2>Primary</h2>
       <h3>Mobile App Prototype</h3>
       <p>Empowering U.S. voters to make informed decisions during state primary elections.</p>
     </div>
-    <div> <!--PlanIt-->
+    <div class="col-1"></div>
+  </section>
+  <section class="row"> <!--project 2-->
+    <div class="col-1"></div>
+    <div class="col-10" <!--PlanIt-->
       <a href="index.html" class="project">
-        <img src="assets/planit_app.png" alt="PlanIt Mobile App">
+        <img src="assets/planit_app.png" alt="PlanIt Mobile App" class="project-preview">
       </a>
       <h2>PlanIt</h2>
       <h3>Mobile App Prototype</h3>
       <p>A homework planner that's simple enough for a child to use, hip enough for a teen to enjoy.</p>
     </div>
-    <div> <!--Product Showcase-->
+    <div class="col-1"></div>
+  </section>
+  <section class="row">
+    <div class="col-1"></div>
+    <div class="col-10"> <!--Product Showcase-->
       <a href="index.html" class="project">
-        <img src="assets/product_showcase_v2.png" alt="Product Showcase Responsive Website">
+        <img src="assets/product_showcase_v2.png" alt="Product Showcase Responsive Website" class="project-preview">
       </a>
       <h2>PlanIt Showcase</h2>
       <h3>Responsive Site Design</h3>
       <p>A landing page to market the mobile app PlanIt.</p>
     </div>
+    <div class="col-1"></div>
   </section>
-  <section> <!--footer-->
-    <a href="index.html" class="social">
-      <img src="assets/linkedin_icon.png">
-    </a>
-    <a href="index.html" class="social">
-      <img src="assets/instagram_icon.png">
-    </a>
-    <a href="index.html" class="social">
-      <img src="assets/twitter_icon.png">
-    </a>
-    <a href="index.html" class="social">
-      <img src="assets/email_icon.png">
-    </a>
+  <section class="row"> <!--footer-->
+    <div class="col-4"></div>
+    <div class="footer">
+      <div class="col-4">
+        <ul>
+          <li class="foot-list">
+            <a href="index.html" class="social">
+              <img src="assets/linkedin_icon.png">
+            </a>
+          </li>
+          <li class="foot-list">
+            <a href="index.html" class="social">
+              <img src="assets/instagram_icon.png">
+            </a>
+          </li>
+          <li class="foot-list">
+            <a href="index.html" class="social">
+              <img src="assets/twitter_icon.png">
+            </a>
+          </li>
+          <li class="foot-list">
+            <a href="index.html" class="social">
+              <img src="assets/email_icon.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4"></div>
   </section>
 </body>
 </html>
