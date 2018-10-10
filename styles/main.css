@@ -12,7 +12,7 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* desktop */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -30,12 +30,11 @@ html {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 1px solid red;
+    padding: 15px 0px 15px 0px;
 }
 
 .col-2 {
-  padding: 1px;
+  padding: 1px 0px 1px 0px;
 }
 
 .row::after {
@@ -117,7 +116,6 @@ a.nav-item {
   font-weight: 300;
   display: block;
   padding: 8px;
-  border: 1px solid red;
 }
 
 /*unvisited nav link*/
@@ -145,7 +143,6 @@ a.nav-item:active {
 a.social {
   display: inline-block;
   padding: 0px;
-  border: 1px solid red;
 }
 
 img.icon {
@@ -169,7 +166,7 @@ a.project {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 728px){
+@media only screen and (min-width: 769px){
 /* Main container for portfolio preview images */
 .overlay-image {
  position: relative;
@@ -221,6 +218,6 @@ a.project {
  opacity: 0;
 }
 .overlay-image .hover-project {
- background-color: rgba(0,0,0,0.8);
+ background-color: rgba(0,150,196,0.85);
 }
 }
