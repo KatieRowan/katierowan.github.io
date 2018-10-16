@@ -12,7 +12,7 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   /* desktop */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -62,32 +62,43 @@ img.logo {
   padding: 0px 20px 0px 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   img.logo {
     padding: 0px;
   }
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
+  color: #0096c4;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 h3 {
   font-size: 20px;
   font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+h3.first_case {
+  margin-top: 100px;
 }
 
 div.text {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
   h1 {
     font-size: 48px;
     font-weight: 300;
@@ -95,16 +106,27 @@ div.text {
   h2 {
     font-size: 40px;
     font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  h3.first_case{
+    margin-top: 0px;
   }
 }
 
 p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 300;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ul {
@@ -164,7 +186,7 @@ a.button:active {
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
 
   ul {
     text-align: right;
@@ -184,6 +206,10 @@ a.button:active {
     display: block;
     padding: 0px;
   }
+}
+
+div.footer {
+  margin-top: 60px;
 }
 
 /*unvisited nav link*/
@@ -266,6 +292,7 @@ li.foot-list {
   .overlay-image .hover-project {
     position: absolute;
     top: 0;
+    bottom: 0;
     height: 100%;
     width: 100%;
     opacity: 0;
