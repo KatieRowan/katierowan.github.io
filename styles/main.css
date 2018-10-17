@@ -62,9 +62,19 @@ img.logo {
   padding: 0px 20px 0px 20px;
 }
 
+img.small_logo {
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+}
+
 @media only screen and (min-width: 1024px) {
   img.logo {
     padding: 0px;
+  }
+  img.small_logo {
+    float: left;
+    width: 100%;
+    padding: 15px 0px 0px 0px;
   }
 }
 
@@ -219,6 +229,10 @@ a.nav-item:link {
   font-weight: 500;
 }
 
+a.current:link {
+  text-decoration: line-through;
+}
+
 @media only screen and (min-width: 1024px){
 /* hover nav link */
   a.nav-item::after {
@@ -260,6 +274,37 @@ li.foot-list {
 
 .katie-description {
   text-align: center;
+}
+
+div.bio {
+  padding-top: 10px;
+}
+
+p.bio-text {
+  line-height: 1.5em;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+img.bio-pic {
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+  div.bio {
+    padding-top: 40px;
+  }
+  p.bio-text {
+    padding-left: 0px;
+    padding-right: 60px;
+  }
+  img.bio-pic {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px){
