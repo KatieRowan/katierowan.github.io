@@ -256,13 +256,11 @@ div.footer {
 a.aboutlink:link {
   text-decoration: none;
   color: #0096c4;
-  font-weight: 400;
 }
 
 a.aboutlink:visited {
   text-decoration: none;
   color: #0096c4;
-  font-weight: 400;
 }
 
 /*unvisited nav link*/
@@ -350,8 +348,9 @@ img.bio-pic {
     padding-right: 60px;
   }
   img.bio-pic {
-    width: 100%;
+    width: 40%;
     padding-top: 20px;
+    position: fixed;
   }
 }
 
