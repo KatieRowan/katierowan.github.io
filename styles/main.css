@@ -93,6 +93,11 @@ h1 {
   margin-bottom: 10px;
 }
 
+h1 {
+  padding-top: 40px;
+  text-align: center;
+}
+
 h2 {
   font-size: 32px;
   font-weight: 400;
@@ -253,12 +258,12 @@ div.footer {
   margin-top: 60px;
 }
 
-a.aboutlink:link {
+a.intextlink:link {
   text-decoration: none;
   color: #0096c4;
 }
 
-a.aboutlink:visited {
+a.intextlink:visited {
   text-decoration: none;
   color: #0096c4;
 }
@@ -330,6 +335,11 @@ p.bio-text {
   line-height: 1.5em;
   padding-left: 80px;
   padding-right: 80px;
+}
+
+p.contact-body {
+  line-height: 1.5em;
+  text-align: center;
 }
 
 img.bio-pic {
@@ -407,54 +417,3 @@ img.bio-pic {
     background-color: rgba(0,150,196,0.85);
   }
 }
-
-/*** Contact Form Styling **/
-
-form {
-  width: 100%;
-  margin:50px auto;
-}
-
-.feedback-input {
-  color: black;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #8cc8db;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
-
-.feedback-input:focus { border:2px solid #0096c4; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
-  width: 100%;
-    background: #ffffff;
-    border-radius: 5px;
-    border: 2px solid #bc1b2a;
-    cursor: pointer;
-    color: #bc1b2a;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 400;
-  }
-
-  [type="submit"]:hover {
-    background:#bc1b2a;
-    color: #ffffff;
-  }
