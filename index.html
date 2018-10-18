@@ -8,10 +8,13 @@
   <meta name="keywords" content="HTML,CSS,JavaScript">
   <meta name="author" content="Katie Rowan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+  <link rel="stylesheet" href="aos-master/dist/aos.css"/>
+  <script src="aos-master/dist/aos.js"></script>
+  <script src="scripts/index.js"></script>
 </head>
 
 <body>
@@ -20,7 +23,7 @@
       <ul>
         <li class="nav-list"><a href="index.html" class="nav-item current">Work</a></li>
         <li class="nav-list"><a href="about.html" class="nav-item">About</a></li>
-        <li class="nav-list"><a href="resume.html" class="nav-item">Resum&eacute;</a></li>
+        <li class="nav-list"><a href="contact.html" class="nav-item">Contact</a></li>
       </ul>
     </div>
     <div class="col-1"></div>
@@ -33,20 +36,21 @@
     <div class="col-3"></div>
   </section>
   <section class="row"> <!--Katie description-->
-    <div class="col-2"></div>
+    <div class="col-3"></div>
     <div class="katie-description">
-      <div class="col-8">
+      <div class="col-6">
         <h1><b>UX/UI Designer in D.C.</b></h1>
-        <p>Passionate about inclusive design, empathetic research, and '90s cartoons.</p>
+        <p class="home-bio">As a kid, if you asked me what I wanted to be when I grew up, I would have told you one of three things: an artist, a lawyer, or a teacher. Today, I'd tell you I've found a way to merge all three into a career that I love. Find out more <a href="about.html" class="aboutlink">about me</a>.<br/><br>Scroll for some of my recent projects.</br></p>
       </div>
     </div>
-    <div class="col-2"></div>
+    <div class="col-3"></div>
+    <div class="col-12 arrow"><img src="assets/greydownarrow.png" class="small-icon"></div>
   </section>
-  <section class="row"> <!--project 1-->
+  <section class="row" data-aos="fade-up"> <!--project 1-->
     <div class="col-2"></div>
     <div class="col-8"> <!--Primary-->
       <div class="overlay-image">
-        <img src="assets/Primary_iPhones.png" alt="Primary Mobile App" class="project-preview first_preview">
+        <img src="assets/V2_Primary_iPhones.png" alt="Primary Mobile App" class="project-preview first_preview">
           <div class="hover-project">
             <div class="text">
               <h3 class="first_case">App Concept</h3>
@@ -61,9 +65,9 @@
   </section>
   <section class="row"> <!--projects 2 & 3-->
     <div class="col-2"></div>
-    <div class="col-4"> <!--PlanIt-->
+    <div class="col-4" data-aos="fade-up"> <!--PlanIt-->
       <div class="overlay-image">
-        <img src="assets/iphone_planit.png" alt="PlanIt Mobile App" class="project-preview">
+        <img src="assets/V2_PlanIt_App.png" alt="PlanIt Mobile App" class="project-preview">
           <div class="hover-project">
             <div class="text">
               <h3>App Concept</h3>
@@ -74,9 +78,9 @@
           </div>
       </div>
     </div>
-    <div class="col-4"> <!--Showcase-->
+    <div class="col-4" data-aos="fade-up"> <!--Showcase-->
       <div class="overlay-image">
-          <img src="assets/desktop_showcase.png" alt="Product Showcase Responsive Website" class="project-preview">
+          <img src="assets/V2_Showcase.png" alt="Product Showcase Responsive Website" class="project-preview">
           <div class="hover-project">
             <div class="text">
               <h3>Website</h3>
