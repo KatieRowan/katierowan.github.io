@@ -194,6 +194,24 @@ li.nav-list {
   display: inline-block;
 }
 
+a.prototypebutton {
+  background-color: none;
+  border: 1px solid #bc1b2a;
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #bc1b2a;
+  font-weight: 400;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+a.prototypebutton:active {
+  background-color: #bc1b2a;
+  color: white;
+}
+
 a.button {
   background-color: none;
   border: 1px solid #bc1b2a;
@@ -230,11 +248,17 @@ a.button:active {
     background-color: white;
     color: #bc1b2a;
   }
+
+  a.prototypebutton:hover {
+    background-color: #bc1b2a;
+    color: white;
+  }
+
 }
 
 @media only screen and (min-width: 1024px){
 
-  ul {
+  ul.ulnav {
     text-align: right;
   }
 
@@ -266,6 +290,10 @@ a.intextlink:link {
 a.intextlink:visited {
   text-decoration: none;
   color: #0096c4;
+}
+
+a.intextlink:hover {
+  font-weight: 400;
 }
 
 /*unvisited nav link*/
@@ -340,6 +368,8 @@ p.bio-text {
 p.contact-body {
   line-height: 1.5em;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 img.bio-pic {
@@ -361,6 +391,9 @@ img.bio-pic {
     width: 40%;
     padding-top: 20px;
     position: fixed;
+  }
+  p.contact-body {
+    padding: 0px;
   }
 }
 
@@ -415,5 +448,79 @@ img.bio-pic {
   }
   .overlay-image .hover-project {
     background-color: rgba(0,150,196,0.85);
+  }
+}
+
+img.cs-header {
+  width: 100%;
+}
+
+p.case-study-body {
+  line-height: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+p.case-study-fact {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+img.factfig {
+  width: 100%;
+  padding: 0px 100px 0px 100px;
+}
+
+img.factfig-large1 {
+  width: 97%;
+  padding: 0px;
+  align-items: center;
+}
+
+img.factfig-large2 {
+  width: 100%;
+  padding: 0px;
+  align-items: center;
+}
+
+img.userimage {
+  width: 100%;
+  padding: 0px 40px 30px 40px;
+}
+
+img.snapshot {
+  width: 100%;
+  padding: 0px 15px 15px 15px;
+}
+
+img.testingsnap {
+  width: 100%;
+  padding: 0px 50px 20px 50px;
+}
+
+img.brandingsmall {
+  width: 100%;
+  padding: 0px 120px 0px 120px;
+}
+
+img.brandingmed {
+  width: 100%;
+  padding: 0px;
+}
+
+img.animation {
+  width: 100%;
+  padding: 0px 50px 20px 50px;
+}
+
+@media only screen and (min-width: 1024px){
+  .case-study-title {
+    text-align: left;
+    padding: 200px 0px 0px 0px;
+  }
+
+  .case-study-subtitle {
+    padding: 20px 0px 0px 0px;
+    line-height: 1.5em;
   }
 }
