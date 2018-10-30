@@ -11,15 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/primary.css">
   <link rel="stylesheet" href="aos-master/dist/aos.css"/>
   <script src="aos-master/dist/aos.js"></script>
   <script src="scripts/index.js"></script>
 </head>
 
 <body>
-  <nav class="row"> <!--nav bar-->
+
+<!--NAV BAR-->
+  <nav class="row">
     <div class="col-1"></div>
     <div class="col-2">
       <a href="index.html"><img src="assets/horizontal_KR_logo.png" class="small_logo"></a>
@@ -35,44 +39,35 @@
   </nav>
 
 <!--HEADER-->
-  <section class="row">
+  <section class="row banner">
     <div class="col-1"></div>
     <div class="col-4">
       <h1 class="case-study-title"><b>Primary</b></h1>
-      <p class="case-study-subtitle">An app concept designed to empower U.S. citizens to become more informed voters during state primary elections.</p>
+      <p class="case-study-summary"><i>My Roles: Research, Information Architecture, Testing, Branding, Visual Design</i></p>
+      <p class="case-study-summary">In the United States, voter turnout for state primary elections is low. Enter Primary: an app that aims to increase voter turnout by making research effortless.</p>
+      <p class="case-study-summary">Voters can browse their state primary election ballots, compare candidates across issues, and keep track of their picks for open seats.</p>
+      <p class="case-study-summary"><a href ="https://invis.io/M3O3DAQYN8T" target="_blank" class="prototypebutton">View Prototype</a></p>
     </div>
     <div class="col-1"></div>
     <div class="col-5">
-      <img src="assets/primaryheaderimage.png" class="cs-header">
     </div>
     <div class="col-1"></div>
   </section>
 
-<!--SHORT SUMMARY-->
-  <section class="row" data-aos="fade-up">
-    <div class="col-1"></div>
-    <div class="col-2">
-      <h3>TL;DR</h3>
-    </div>
-    <div class="col-7">
-      <p class="case-study-body">In the United States, voter turnout for state primary elections is low.</p>
-      <p class="case-study-body">Enter Primary, an app that aims to increase voter turnout by making research effortless. Voters can browse their state primary election ballots, compare candidates across issues, and keep track of their picks for open seats.</p>
-      <p class="case-study-body"><b>My Roles:</b> Research, Information Architecture, Testing, Branding, Visual Design</p>
-      <p class="case-study-body"><a href ="https://invis.io/M3O3DAQYN8T" target="_blank" class="prototypebutton">View Prototype</a></p>
-    </div>
-    <div class="col-2>"></div>
-  </section>
+<!--BEGIN PAGE CONTENT-->
+
 
 <!--BACKGROUND/PROBLEM-->
-<section class="row" data-aos="fade-up">
-  <section class="row">
+<div class="case-chunk" data-aos="fade-up">
+  <section class="row" id="background">
     <div class="col-1"></div>
     <div class="col-2">
-      <h3>01<br/>Background</h3>
+      <h2>01<br/>Background</h2>
     </div>
     <div class="col-7">
-      <p class="case-study-body">How low is voter turnout really? Let’s look at the District of Columbia to get an idea. [<i>source: <a href="https://electionresults.dcboe.org/" target="_blank" class="intextlink">DC Board of Elections</a>]</i></p>
-      <p class="case-study-body">As of June 2018, there were 479,723 registered voters in Washington, D.C. That means that roughly 68% of D.C. residents were registered to vote.</p>
+      <h3>A Brief Look at D.C.</h3>
+      <p class="case-study-body">To get an idea of the low voter turnout for state primary elections, let’s look at the District of Columbia.</p>
+      <p class="case-study-body">According to the <a href="https://electionresults.dcboe.org/" target="_blank" class="intextlink">DC Board of Elections</a>, as of June 2018, there were 479,723 registered voters in Washington, D.C. That means that roughly 68% of D.C. residents were registered to vote.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -81,12 +76,12 @@
     <div class="col-3"></div>
     <div class="col-3">
       <img src="assets/pie65.png" class="factfig"/>
-      <p class="case-study-fact">In 2016, 65.3% of registered D.C. voters cast a vote in the general election.</p>
+      <p class="case-study-fact-bot">of registered D.C. voters cast a vote in the 2016 general election.</p>
     </div>
     <div class="col-1"></div>
     <div class="col-3">
       <img src="assets/pie18.png" class="factfig"/>
-      <p class="case-study-fact">In June of 2018, only 18.66% of registered D.C. voters turned out for the state primary.</p>
+      <p class="case-study-fact-bot">of registered D.C. voters cast a vote in the 2018 state primary.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -94,24 +89,23 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-7">
-      <p class="case-study-body">So the question is: <b>why the low voter turnout for state primaries?</b></p>
+      <p class="case-study-body">The District's voting pattern is just one example of what's happening across the country. Despite a recent upsurge in voting attendance, there is still a large discrepancy between turnout for general elections and turnout for state primary elections. So the question is: why aren't people voting in state primaries?</p>
     </div>
     <div class="col-2"></div>
   </section>
-</section>
+</div>
 
   <!--RESEARCH-->
 
-<section class="row" data-aos="fade-up">
-  <section class="row">
+<div class="case-chunk" data-aos="fade-up">
+  <section class="row"  id="research">
     <div class="col-1"></div>
     <div class="col-2">
-      <h3>02<br/>Research</h3>
+      <h2>02<br/>Research</h2>
     </div>
     <div class="col-7">
-      <p class="case-study-body">I surveyed 29 U.S. citizens of voting age to hone in on the issue.</p>
-      <p class="case-study-body"><b>The Voters</b></p>
-      <p class="case-study-body">62.1% of users surveyed said they voted or were planning to vote in their state primary elections.</p>
+      <h3>Surveying U.S. Voters</h3>
+      <p class="case-study-body">I surveyed 29 U.S. citizens of voting age to hone in on the issue. 62.1% of respondents said they voted or were planning to vote in their state primary elections.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -119,12 +113,12 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-3">
-      <p class="case-study-fact">How do they typically decide who & what to vote for?</p>
+      <p class="case-study-fact-top">How do voters decide who & what to vote for?</p>
       <img src="assets/VoterGraph1.png" class="factfig-large1"/>
     </div>
     <div class="col-1"></div>
     <div class="col-3">
-      <p class="case-study-fact">What would help make voting in state primaries easier?</p>
+      <p class="case-study-fact-top">What would help make voting in state primaries easier?</p>
       <img src="assets/VoterGraph2.png" class="factfig-large2"/>
     </div>
     <div class="col-2"></div>
@@ -133,7 +127,6 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-7">
-      <p class="case-study-body"><b>The Non-Voters</b></p>
       <p class="case-study-body">37.9% of users surveyed said they did not vote or were not planning to vote in their state primary elections. 27% of these non-voters were not registered to a political party, so would not generally be voting in state primary elections (unless there were non-partisan issues/initiatives on the primary ballot).</p>
     </div>
     <div class="col-2"></div>
@@ -143,12 +136,12 @@
     <div class="col-3"></div>
     <div class="col-3">
       <img src="assets/pie45red.png" class="factfig"/>
-      <p class="case-study-fact">45.5% said they would be more likely to vote if there was a single app or website where they could research candidates in one place.</p>
+      <p class="case-study-fact-bot">would be more likely to vote if there was a single app or website where they could research candidates in one place.</p>
     </div>
     <div class="col-1"></div>
     <div class="col-3">
       <img src="assets/pie45blue.png" class="factfig"/>
-      <p class="case-study-fact">45.5% said they would be more likely to vote if there was a better digitized version of the Voter Guide.</p>
+      <p class="case-study-fact-bot">would be more likely to vote if there was a better digitized version of the Voter Guide.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -156,9 +149,9 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-7">
-      <p class="case-study-body"><b>The Competition</b></p>
+      <h3>Eyeing The Competition</h3>
       <p class="case-study-body">In addition to surveying users, I took a look at what was already out there to help voters in elections. By examining the <a href="https://dcboe.org/" target="_blank" class="intextlink">D.C. Board of Elections’ website/app</a>, <a href="https://www.washingtonpost.com/blogs/post-partisan/wp/2018/05/31/the-posts-endorsements-for-2018s-primary-elections/?noredirect=on&utm_term=.6c13a11b26f9" target="_blank" class="intextlink"><i>The Washington Post</i> endorsements</a>, and <a href="https://www.rockthevote.org/" target="_blank" class="intextlink">Rock the Vote</a>, I started navigating the space for a state primary-focused app.</p>
-      <p>I created <a href="https://www.dropbox.com/s/oeptenswl4xaq3m/Primary%20Competitive%20Analysis.pdf?dl=0" target="_blank" class="intextlink">full SWOT analyses</a> on all three competitors, but the key takeaways are summarized below.</p>
+      <p class="case-study-body">I created <a href="https://www.dropbox.com/s/oeptenswl4xaq3m/Primary%20Competitive%20Analysis.pdf?dl=0" target="_blank" class="intextlink">full SWOT analyses</a> on all three competitors, but the key takeaways are summarized below.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -166,14 +159,14 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-3">
-      <p class="case-study-body"><font color="#bc1b2a">Opportunities:</font></p>
+      <p class="case-study-body"><i>Opportunities:</i></p>
       <p class="case-study-body">- Combining information from the Board of Elections with Media endorsements for one-stop-researching</p>
       <p class="case-study-body">- Crafting a recognizable brand like Rock the Vote that appeals to a younger audience for local/state elections</p>
       <p class="case-study-body">- Providing clear information on early voting locations, election day polling places, and voter registration</p>
     </div>
     <div class="col-1"></div>
     <div class="col-3">
-      <p class="case-study-body"><font color="#bc1b2a">Obstacles:</font></p>
+      <p class="case-study-body"><i>Obstacles:</i></p>
       <p class="case-study-body">- Establishing trust</p>
       <p class="case-study-body">- Gaining and maintaining accurate information</p>
       <p class="case-study-body">- Including the needed information while maintaining a clean, intuitive interface</p>
@@ -184,8 +177,8 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-7">
-      <p class="case-study-body"><b>The Users</b></p>
-      <p class="case-study-body">Through my initial research, I identified three key demographics that I wanted to learn more about. I set up interviews with a representative from each group. From these interviews, I crafted <a href="https://www.dropbox.com/sh/8txfqrrowb7am8h/AACrAiF72h4LeWTClTSxc9w2a?dl=0" target="_blank" class="intextlink">user personas</a> that I would want to keep in mind throughout the design process.
+      <h3>Identifying The Users</h3>
+      <p class="case-study-body">Through my initial research, I identified three key demographics that I wanted to learn more about. I set up interviews with a representative from each group. From these interviews, I crafted <a href="https://www.dropbox.com/sh/8txfqrrowb7am8h/AACrAiF72h4LeWTClTSxc9w2a?dl=0" target="_blank" class="intextlink">user personas</a> that I wanted to keep in mind throughout the design process.
       </p>
     </div>
     <div class="col-2"></div>
@@ -214,22 +207,25 @@
     <div class="col-5"><p class="case-study-body">The Traveler: Phil, a 32-year-old man who is constantly out of town, doesn’t tend to vote in state primaries, and doesn’t know much about politics in his area.</p></div>
     <div class="col-2"></div>
   </section>
-</section>
+</div>
 
   <!--INFORMATION ARCHITECTURE-->
-<section class="row" data-aos="fade-up">
-  <section class="row">
+<div class="case-chunk" data-aos="fade-up">
+  <section class="row"  id="infoarch">
     <div class="col-1"></div>
     <div class="col-2">
-      <h3>03<br/>Architecture</h3>
+      <h2>03<br/>Architecture</h2>
     </div>
     <div class="col-7">
+      <h3>Going with the Flow</h3>
       <p class="case-study-body">I wrote <a href="https://www.dropbox.com/s/ong8k234i9z72o6/Primary%20User%20Stories.pdf?dl=0" target="_blank" class="intextlink">user stories</a> to identify the main needs of a new user and a returning user. Building off of these, I worked through five main <a href="https://www.dropbox.com/s/0edvxzfuzg1drbt/Primary%20User%20Flows.pdf?dl=0" target="_blank" class="intextlink">user flows</a>: The First Open, Researching a Candidate, Browsing Ballot Issues, Comparing Candidates, and Participating on a Discussion Feed.*<br/><br/>*Note: I ended up nixing the discussion element of the app while designing the MVP, but have plans to introduce it in a future iteration.</p>
       <img src="assets/userflowsnapshot.png" class="snapshot"></img>
-      <p class="case-study-body"><b>From Sketches to Wireframes</b></p>
-      <p class="case-study-body">Quick 4-up sketching helped me jot down ideas for the general app architecture. I built the best of these sketches out into low-fidelity wireframes using Balsamiq to map out all of the needed screens. To get solid data from testing, I drafted a usability script, did some research, and wrote informative copy for the app.</p>
-      <p class="case-study-body">I used Figma to create high-fidelity wireframes, and popped them into a quick <a href="https://invis.io/4MMYOF3NZS8" target="_blank" class="intextlink">invision prototype</a> for testing.</p>
+      <h3>From Sketches Wireframes</h3>
+      <p class="case-study-body">Quick 4-up sketching helped me jot down ideas for the general app architecture. I built the best of these sketches out into low-fidelity wireframes using Balsamiq to get a clearer sense of the layout. To get solid data from testing, I drafted a usability script, did some research, and wrote informative copy for the app.</p>
       <img src="assets/sketchtowireframe.png" class="snapshot"></img>
+      <h3>High Fidelity Wireframes</h3>
+      <p class="case-study-body">I used Figma to create high-fidelity wireframes, and popped them into a clickable <a href="https://invis.io/4MMYOF3NZS8" target="_blank" class="intextlink">invision prototype</a> for testing.</p>
+      <img src="assets/primarywireframes.png" class="snapshot"></img>
     </div>
     <div class="col-2"></div>
   </section>
@@ -237,9 +233,8 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-7">
-      <p class="case-study-body"><b>TESTING, TESTING…</b></p>
-      <p class="case-study-body">I conducted three in-person user tests and used Maze to test 19 other potential app users.</p>
-      <p class="case-study-body">A Few Key Takeaways:</p>
+      <h3>Testing, Testing...</h3>
+      <p class="case-study-body">I conducted three in-person user tests and used <a href="https://maze.design/" target="_blank" class="intextlink">Maze</a> to test 19 other potential app users. Through these rounds of testing, I had some key learnings that I used to improve the app.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -250,7 +245,7 @@
       <img src="assets/heatmap1.png" class="testingsnap"></img>
     </div>
     <div class="col-5">
-      <p class="case-study-body"><b>Viewing general information on a candidate wasn't intuitive.</b> Only 25% of my Maze users had direct success. Another 43.8% of testers had indirect success, and Maze's heatmaps showed that they were hunting around under "View Profile" rather than clicking the info icon.</p>
+      <p class="case-study-body"><b>Viewing general information on a position wasn't intuitive.</b> Only 25% of my testers had direct success with this mission. Another 43.8% of testers had indirect success, and Maze's heatmaps showed that they were hunting around under "View Profile" rather than clicking the info icon.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -260,7 +255,7 @@
       <img src="assets/iteration1.png" class="testingsnap"></img>
     </div>
     <div class="col-5">
-      <p class="case-study-body"><b>Iteration:</b> As this wasn't a main feature of this app, I didn't want to restructure everything around it. Instead, I added "Learn about position" to the tutorial so that the info icon was highlighted during onboarding. In the high-fidelity mockup, I emphasized the icon with color to make it more visible.</p>
+      <p class="case-study-body"><b>Iteration:</b> As this wasn't a main feature of the app, I didn't want to restructure everything around it. Instead, I added "Learn about positions" to the tutorial so that the info icon was highlighted during onboarding. In the high-fidelity mockup, I emphasized the icon with color to make it more visible.</p>
     </div>
     <div class="col-2"></div>
   </section>
@@ -281,30 +276,24 @@
       <img src="assets/iteration2.png" class="testingsnap"></img>
     </div>
     <div class="col-5">
-      <p class="case-study-body"><b>Iteration:</b> I redesigned the compare view so that users see a snapshot of the candidate. An additional subtle call-to-action gives users the ability to view candidates’ profiles from the candidate window without distracting from the compare features.</p>
+      <p class="case-study-body"><b>Iteration:</b> I redesigned the compare view so that users can see a snapshot of the candidate. A subtle button gives users the ability to view candidates’ profiles from the candidate window without distracting from the compare features.</p>
     </div>
     <div class="col-2"></div>
   </section>
-</section>
+</div>
 
   <!--BRANDING & VISUAL DESIGN-->
-<section class="row" data-aos="fade-up">
-  <section class="row">
+<div class="case-chunk" data-aos="fade-up">
+  <section class="row" id="branding">
     <div class="col-1"></div>
     <div class="col-2">
-      <h3>04<br/>Branding</h3>
+      <h2>04<br/>Branding</h2>
     </div>
     <div class="col-7">
       <p class="case-study-body">I knew I had a difficult task ahead of me: making a boring-sounding political app seem cool and enticing, especially to younger voters.</p>
-      <p class="case-study-body">I started out by brainstorming symbols, concepts and actions related to primary elections in a mindmap.</p>
+      <h3>Brainstorming</h3>
+      <p class="case-study-body">I started out by mindmapping symbols, concepts and actions related to primary elections.</p>
       <img src="assets/Mindmap.png" class="snapshot"></img>
-    </div>
-    <div class="col-2"></div>
-  </section>
-
-  <section class="row">
-      <div class="col-3"></div>
-      <div class="col-7">
       <p class="case-study-body">With American politics as a backdrop, I knew there were certain colors and themes I wanted to incorporate into the visual design. I was also drawn to the concepts of "caring" and "learning" that I came up with while mindmapping. How could I craft a brand that would convey (1) the importance of caring about local politics and (2) passion for researching and becoming an informed voter?</p>
     </div>
     <div class="col-2"></div>
@@ -313,7 +302,8 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-3">
-      <p class="case-study-body"><b>The Name.</b> "Primary" jumped off the page for a multitude of reasons. This app aims to be a user's primary source of information on candidates: the first app they turn to, and the main thing they use for their research. I wanted to be clear that the app is state primary election-specific. "Primary" also connotes importance.</p>
+      <h3>The Name</h3>
+      <p class="case-study-body">"Primary" jumped off the page for a multitude of reasons. This app aims to be a user's primary source of information on candidates: the first app they turn to, and the main thing they use for their research. I wanted to be clear that the app is state primary election-specificic.</p>
     </div>
     <div class="col-4">
       <img src="assets/primarynamelist.png" class="brandingsmall"></img>
@@ -324,7 +314,8 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-3">
-      <p class="case-study-body"><b>The Mood.</b> I pulled my design inspiration for this app from the chunky typefaces used on 1960s protest posters, trying to instill a sense of passion, movement, and importance to the word “Primary.” I incorporated colors that pushed the traditional red, white & blue into a more contemporary palette.</p>
+      <h3>The Mood</h3>
+      <p class="case-study-body">I pulled my design inspiration from the chunky typefaces used on 1960s protest posters, trying to instill a sense of passion, movement, and importance to the word “Primary.” I incorporated colors that pushed the traditional red, white & blue into a more contemporary palette of pinks, blues, and purples.</p>
     </div>
     <div class="col-4">
       <img src="assets/primary_mood.png" class="brandingmed"></img>
@@ -335,7 +326,8 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-3">
-      <p class="case-study-body"><b>The Logo.</b> I visually broke the word “Primary” into its syllables (similar to the way it would be printed in a dictionary). I thought it was important to emphasize the clarity this app will provide. As I went forward with the logo, I changed the "MA" from black to purple to create a more unified word.</p>
+      <h3>The Logo</h3>
+      <p class="case-study-body">I visually broke the word “Primary” into its syllables (similar to the way it would be printed in a dictionary). I thought it was important to emphasize the clarity this app will provide. As I went forward with the logo, I changed the "MA" from black to purple to create a more unified word.</p>
     </div>
     <div class="col-4">
       <img src="assets/primarylogo.png" class="brandingmed"></img>
@@ -346,79 +338,108 @@
   <section class="row">
     <div class="col-3"></div>
     <div class="col-7">
-      <p class="case-study-body"><b>The Style.</b> I chose two font families for the in-app text. Oswald was reminiscent of the protest poster text from which I was drawing inspiration. As its characters are rather narrow and bold, I limited its use to larger-sized headers. Lato was the perfect sleek sans-serif companion for the in-app body text. With its semi-rounded characters, it emoted warmth while maintaining a stable and serious feel.</p>
+      <h3>The Style</h3>
+      <p class="case-study-body">I began exploring font families that would fit the Primary brand. Oswald was reminiscent of the protest poster text from which I was drawing inspiration. As its characters are rather narrow and bold, I limited its use to larger-sized headers for legibility. I selected Lato for the in-app body text. Lato was the perfect sleek companion to Oswald. With its semi-rounded characters, it emoted warmth while maintaining a stable and serious feel.</p>
       <img src="assets/styleguide.png" class="snapshot"></img>
       <p class="case-study-body">To get a full sense of how the branding elements would work together in the app, I created style tiles where I was able to play around with subtle shifts in the color palette and design.</p>
       <img src="assets/styletiles.png" class="snapshot"></img>
     </div>
     <div class="col-2"></div>
   </section>
-</section>
+</div>
 
 <!--MOCKUPS & PROTOTYPE-->
-<section class="row" data-aos="fade-up">
-<section class="row">
-  <div class="col-1"></div>
-  <div class="col-2">
-    <h3>05<br/>Mockups & Prototype</h3>
-  </div>
-  <div class="col-7">
-    <p class="case-study-body">I had reworked my wireframes based on testing feedback. I had created a brand style guide for Primary. It was time to build the mockups.</p>
-    <p class="case-study-body">I fleshed out the user flows and created screens that matched my task scenarios. I created a clickable prototype on invision and performed some final preference tests to tweak a few interactions and features.</p>
-    <p class="case-study-body"><a href ="https://invis.io/M3O3DAQYN8T" target="_blank" class="prototypebutton">View Prototype</a></p>
-  </div>
-  <div class="col-2"></div>
-</section>
+<div class="case-chunk" data-aos="fade-up">
+  <section class="row"  id="mockups">
+    <div class="col-1"></div>
+    <div class="col-2">
+      <h2>05<br/>Mockups</h2>
+    </div>
+    <div class="col-7">
+      <p class="case-study-body">I had reworked my wireframes based on testing feedback and I had created a brand style guide for Primary. It was time to build the high-fidelity mockups.</p>
+      <p class="case-study-body">I fleshed out the user flows and crafted screens that matched my task scenarios. I created a clickable prototype on invision and performed some final preference tests to tweak a few interactions and features.</p>
+    </div>
+    <div class="col-2"></div>
+  </section>
 
-<section class="row">
-  <div class="col-3"></div>
-  <div class="col-4">
-    <p class="case-study-body"><b>Candidate Profile Sliding Cards.</b> Information on candidates is grouped into general statistics and media coverage. The cards allow users to quickly scan through info. The sliding action provides more screen area for ease-of-reading while maintaining access to key candidate information and call-to-action.</p>
-  </div>
-  <div class="col-3">
-    <img src="assets/primarycardscroll.gif" class="animation"></img>
-  </div>
-  <div class="col-2"></div>
-</section>
+  <section class="row">
+    <div class="col-3"></div>
+    <div class="col-4">
+      <h3>Candidate Profile Sliding Cards</h3>
+      <p class="case-study-body">Information on candidates is grouped into general statistics and media coverage. The cards allow users to quickly scan through info. The sliding action provides more screen area for ease-of-reading while maintaining access to key candidate information and call-to-action.</p>
+    </div>
+    <div class="col-3">
+      <img src="assets/primarycardscroll.gif" class="animation"></img>
+    </div>
+    <div class="col-2"></div>
+  </section>
 
-<section class="row">
-  <div class="col-3"></div>
-  <div class="col-4">
-    <p class="case-study-body"><b>Card Flips.</b> As establishing trust was a main issue I identified through competitive analysis, being clear about where data was coming from was a priority. The data cards allow users to click to view more information and provide links back to original sources.</p>
-  </div>
-  <div class="col-3">
-    <img src="assets/primaryflipcard.gif" class="animation"></img>
-  </div>
-  <div class="col-2"></div>
-</section>
+  <section class="row">
+    <div class="col-3"></div>
+    <div class="col-4">
+      <h3>Card Flips</h3>
+      <p class="case-study-body">As establishing trust was a main issue I identified through competitive analysis, being clear about where data was coming from was a priority. The data cards allow users to click to view more information and provide links back to original sources.</p>
+    </div>
+    <div class="col-3">
+      <img src="assets/primaryflipcard.gif" class="animation"></img>
+    </div>
+    <div class="col-2"></div>
+  </section>
 
-<section class="row">
-  <div class="col-3"></div>
-  <div class="col-4">
-    <p class="case-study-body"><b>Comparison Carousel.</b> Reminiscent of the candidate profile view, mini candidate cards allow users to see a snapshot of each candidate. Users are prompted to view the candidate’s profile if they’re looking for more information. The carousel provides an intuitive way to browse, akin to dating apps.</p>
-  </div>
-  <div class="col-3">
-    <img src="assets/primarycarousel.gif" class="animation"></img>
-  </div>
-  <div class="col-2"></div>
-</section>
-</section>
+  <section class="row">
+    <div class="col-3"></div>
+    <div class="col-4">
+      <h3>Comparison Carousel</h3>
+      <p class="case-study-body">Reminiscent of the candidate profile view, mini candidate cards allow users to see a snapshot of each candidate. Users are prompted to view the candidate’s profile if they’re looking for more information. The carousel provides an intuitive way to browse, akin to dating apps.</p>
+    </div>
+    <div class="col-3">
+      <img src="assets/primarycarousel.gif" class="animation"></img>
+    </div>
+    <div class="col-2"></div>
+  </section>
+
+  <section class="row">
+    <div class="col-3"></div>
+    <div class="col-7">
+      <img src="assets/primarymockups.png" class="snapshot"></img>
+    </div>
+    <div class="col-2"></div>
+  </section>
+
+  <section class="row">
+    <div class="col-3"></div>
+    <div class="col-7">
+      <p class="case-study-body"><a href ="https://invis.io/M3O3DAQYN8T" target="_blank" class="prototypebutton">View the Full Prototype</a></p>
+    </div>
+    <div class="col-2"></div>
+  </section>
+</div>
 
 <!--TAKEAWAYS-->
-<section class="row" data-aos="fade-up">
-<section class="row">
-  <div class="col-1"></div>
-  <div class="col-2">
-    <h3>06<br/>Takeaways</h3>
-  </div>
-  <div class="col-7">
-    <p class="case-study-body"><b>1. Demos and tutorials are important.</b> Through testing, I was able to identify points of confusion for users. I incorporated them into the tutorial to alleviate later confusion without needing to restructure the entire app.</p>
-    <p class="case-study-body"><b>2. Small adjustments make a big difference.</b> By using the golden ratio and tweaking the colors of Primary's logo, it became tighter and more harmonious, working well in both small and large sizes. I used an 8-pt. grid while designing each screen of the app to ensure adequate, consistent spacing. These changes, however small, made the app and brand identity stronger.</p>
-    <p class="case-study-body"><b>3. You have to narrow your focus for an MVP.</b> The biggest requirement for the first version of this app is to empower voters to do their own research and make informed decisions. I scrapped the idea of a discussion feed to narrow the focus of this first iteration. Going forward, I'd like to incorporate some way of encouraging word-of-mouth, whether that be through a discussion feed or through a sharing feature.</p>
-  </div>
-  <div class="col-2"></div>
-</section>
-</section>
+<div class="case-chunk" data-aos="fade-up">
+  <section class="row"  id="takeaways">
+    <div class="col-1"></div>
+    <div class="col-2">
+      <h2>06<br/>Takeaways</h2>
+    </div>
+    <div class="col-7">
+      <h3>1. Demos and tutorials are important</h3>
+      <p class="case-study-body">Through testing, I was able to identify points of confusion for users. I incorporated them into the tutorial to alleviate later confusion without needing to restructure the entire app.</p>
+      <h3>2. Small adjustments make a big difference.</h3>
+      <p class="case-study-body">By using the golden ratio and tweaking the colors of Primary's logo, it became tighter and more harmonious, working well in both small and large sizes. I used an 8-pt. grid while designing each screen of the app to ensure adequate, consistent spacing. These changes, however small, made the app and brand identity stronger.</p>
+      <h3>3. You have to narrow your focus for an MVP.</h3>
+      <p class="case-study-body">The biggest requirement for the first version of this app is to empower voters to do their own research and make informed decisions. I scrapped the idea of a discussion feed to narrow the focus of this first iteration. Going forward, I'd like to incorporate some way of encouraging word-of-mouth, whether that be through a discussion feed or through a sharing feature.</p>
+    </div>
+    <div class="col-2"></div>
+  </section>
+</div>
+
+<!--NEXT CASE STUDY-->
+  <section class="row">
+    <div class="col-12 casestudybar">
+      <p class="case-study-body"><a href ="planit.html" class="case-study-button">View Next Case Study</a></p>
+    </div>
+  </section>
 
   <!--FOOTER-->
 
@@ -427,22 +448,22 @@
       <div class="col-12">
         <ul class="foot">
           <li class="foot-list">
-            <a href="https://www.linkedin.com/in/katierowan/" class="social">
+            <a href="https://www.linkedin.com/in/katierowan/" target="_blank" class="social">
               <img src="assets/linkedin_icon.png" class="icon">
             </a>
           </li>
           <li class="foot-list">
-            <a href="https://www.instagram.com/katiejrowan/" class="social">
+            <a href="https://www.instagram.com/katiejrowan/" target="_blank" class="social">
               <img src="assets/instagram_icon.png" class="icon">
             </a>
           </li>
           <li class="foot-list">
-            <a href="https://twitter.com/KatieJRowan" class="social">
+            <a href="https://twitter.com/KatieJRowan" target="_blank" class="social">
               <img src="assets/twitter_icon.png" class="icon">
             </a>
           </li>
           <li class="foot-list">
-            <a href="mailto:katiejrowan@gmail.com" class="social">
+            <a href="mailto:katiejrowan@gmail.com" target="_blank" class="social">
               <img src="assets/email_icon.png" class="icon">
             </a>
           </li>
@@ -450,6 +471,5 @@
       </div>
     </div>
   </section>
-
 </body>
 </html>

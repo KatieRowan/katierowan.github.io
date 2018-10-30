@@ -1,0 +1,36 @@
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  text-transform: none;
+}
+
+div.case-chunk {
+  margin-bottom: 30px;
+}
+
+section.banner {
+  background-image: url("../assets/ballotbox.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 40px;
+}

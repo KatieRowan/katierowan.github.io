@@ -194,6 +194,26 @@ li.nav-list {
   display: inline-block;
 }
 
+a.case-study-button {
+  background-color: none;
+  border: 1px solid #0096c4;
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #0096c4;
+  font-weight: 400;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+@media only screen and (min-width: 1024px) {
+  a.case-study-button:hover {
+    background-color: #0096c4;
+    color: white;
+  }
+}
+
 a.prototypebutton {
   background-color: none;
   border: 1px solid #bc1b2a;
@@ -276,6 +296,18 @@ a.button:active {
     display: block;
     padding: 0px;
   }
+
+  ul.casestudy-ulnav {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 15px 0px 15px 20px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+  }
+}
+
+div.casestudybar {
+  text-align: center;
 }
 
 div.footer {
@@ -450,20 +482,34 @@ img.bio-pic {
     background-color: rgba(0,150,196,0.85);
   }
 }
-
-img.cs-header {
-  width: 100%;
+p.case-study-summary {
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px 0px 30px 0px;
 }
 
 p.case-study-body {
   line-height: 1.5em;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
 }
 
-p.case-study-fact {
+p.case-study-fact-top {
   line-height: 1.5em;
   text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+p.case-study-fact-bot {
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 img.factfig {
@@ -490,7 +536,7 @@ img.userimage {
 
 img.snapshot {
   width: 100%;
-  padding: 0px 15px 15px 15px;
+  padding: 0px;
 }
 
 img.testingsnap {
@@ -505,7 +551,7 @@ img.brandingsmall {
 
 img.brandingmed {
   width: 100%;
-  padding: 0px;
+  padding: 10px 30px 0px 30px;
 }
 
 img.animation {
@@ -516,10 +562,10 @@ img.animation {
 @media only screen and (min-width: 1024px){
   .case-study-title {
     text-align: left;
-    padding: 200px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
   }
 
-  .case-study-subtitle {
+  p.case-study-summary {
     padding: 20px 0px 0px 0px;
     line-height: 1.5em;
   }
