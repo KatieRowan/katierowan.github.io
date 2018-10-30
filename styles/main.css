@@ -12,22 +12,6 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
-  /* desktop */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
 [class*="col-"] {
     float: left;
     padding: 15px 0px 15px 0px;
@@ -67,23 +51,9 @@ img.small_logo {
   padding: 0px 20px 20px 20px;
 }
 
-@media only screen and (min-width: 600px) {
-  img.logo {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  img.logo {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  img.small_logo {
-    float: left;
-    width: 100%;
-    padding: 15px 0px 0px 0px;
-  }
+div.spacer {
+  height: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -137,36 +107,6 @@ img.small-icon {
   width: 8%;
 }
 
-@media only screen and (min-width: 768px){
-  img.small-icon {
-    padding-top: none;
-    width: 3%;
-  }
-}
-
-@media only screen and (min-width: 1024px){
-  h1 {
-    font-size: 42px;
-    font-weight: 300;
-  }
-  h2 {
-    font-size: 32px;
-    font-weight: 400;
-    color: white;
-    margin-bottom: 40px;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-
-  h3.first_case{
-    margin-top: 0px;
-  }
-}
-
 p {
   font-size: 18px;
   font-weight: 300;
@@ -207,13 +147,6 @@ a.case-study-button {
   transition-duration: 0.4s;
 }
 
-@media only screen and (min-width: 1024px) {
-  a.case-study-button:hover {
-    background-color: #0096c4;
-    color: white;
-  }
-}
-
 a.prototypebutton {
   background-color: none;
   border: 1px solid #bc1b2a;
@@ -250,62 +183,6 @@ a.button:active {
   color: white;
 }
 
-@media only screen and (min-width: 1024px){
-  a.button {
-    background-color: none;
-    border: 1px solid white;
-    border-radius: 6px;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-  }
-
-  a.button:hover {
-    background-color: white;
-    color: #bc1b2a;
-  }
-
-  a.prototypebutton:hover {
-    background-color: #bc1b2a;
-    color: white;
-  }
-
-}
-
-@media only screen and (min-width: 1024px){
-
-  ul.ulnav {
-    text-align: right;
-  }
-
-  ul.foot {
-    text-align: center;
-  }
-
-  li.nav-list {
-    padding-left: 80px;
-  }
-
-  a.nav-item {
-    font-size: 18px;
-    font-weight: 100;
-    display: block;
-    padding: 0px;
-  }
-
-  ul.casestudy-ulnav {
-    text-align: left;
-    background-color: #ffffff;
-    padding: 15px 0px 15px 20px;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-  }
-}
-
 div.casestudybar {
   text-align: center;
 }
@@ -337,23 +214,6 @@ a.nav-item:link {
 
 a.current:link {
   text-decoration: line-through;
-}
-
-@media only screen and (min-width: 1024px){
-/* hover nav link */
-  a.nav-item::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #0096c4;
-    transition: width .3s;
-  }
-
-  a.nav-item:hover::after {
-    width: 100%;
-    transition: width .3s;
-  }
 }
 
 /*visited nav link*/
@@ -411,87 +271,21 @@ img.bio-pic {
   padding-right: 60px;
 }
 
-@media only screen and (min-width: 1024px) {
-  div.bio {
-    padding-top: 40px;
-  }
-  p.bio-text {
-    padding-left: 0px;
-    padding-right: 60px;
-  }
-  img.bio-pic {
-    width: 40%;
-    padding-top: 20px;
-    position: fixed;
-  }
-  p.contact-body {
-    padding: 0px;
-  }
-}
-
-@media only screen and (min-width: 1024px){
-/* Main container for portfolio preview images */
-  .overlay-image {
-    position: relative;
-    width: 100%;
-  }
-
-/* Original portfolio preview image */
-  .overlay-image .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-/* Original text overlay for portfolio preview images */
-  .overlay-image .text {
-    color: #ffffff;
-    line-height: 1.5em;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-  }
-
-/* New overlay on hover for portfolio preview images */
-  .overlay-image .hover-project {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-  }
-
-/* New overlay appearance on hover for portfolio preview images */
-  .overlay-image:hover .hover-project {
-    opacity: 1;
-  }
-
-/* Background and text overlay on hover for portfolio preview images */
-  .overlay-image .normal {
-    transition: .5s ease;
-  }
-  .overlay-image:hover .normal {
-    opacity: 0;
-  }
-  .overlay-image .hover-project {
-    background-color: rgba(0,150,196,0.85);
-  }
-}
 p.case-study-summary {
   line-height: 1.5em;
   margin: 0px;
-  padding: 0px 0px 30px 0px;
+  padding: 0px 20px 30px 20px;
+  text-align: center;
 }
 
 p.case-study-body {
   line-height: 1.5em;
   margin: 0px;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 20px 10px 20px;
+}
+
+p.viewprototype {
+  text-align: center;
 }
 
 p.case-study-fact-top {
@@ -519,13 +313,13 @@ img.factfig {
 
 img.factfig-large1 {
   width: 97%;
-  padding: 0px;
+  padding: 0px 20px 0px 20px;
   align-items: center;
 }
 
 img.factfig-large2 {
   width: 100%;
-  padding: 0px;
+  padding: 0px 20px 0px 20px;
   align-items: center;
 }
 
@@ -536,7 +330,7 @@ img.userimage {
 
 img.snapshot {
   width: 100%;
-  padding: 0px;
+  padding: 0px 20px 0px 20px;
 }
 
 img.testingsnap {
@@ -559,14 +353,284 @@ img.animation {
   padding: 0px 50px 20px 50px;
 }
 
-@media only screen and (min-width: 1024px){
-  .case-study-title {
-    text-align: left;
-    padding: 100px 0px 0px 0px;
+/*** MEDIA QUERIES FOR RESPONSIVE SITE ***/
+
+@media only screen and (min-width: 600px) {
+  img.logo {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  img.testingsnap {
+    width: 100%;
+    padding: 0px 100px 0px 100px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  img.testingsnap {
+    width: 100%;
+    padding: 0px 150px 0px 150px;
+  }
+  img.animation {
+    padding: 0px 100px 0px 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width : 1024px) {
+  img.factfig {
+    padding: 0px 200px 0px 200px;
+  }
+  img.testingsnap {
+    width: 100%;
+    padding: 0px 250px 0px 250px;
+  }
+  img.userimage {
+    width: 100%;
+    padding: 0px 250px 0px 250px;
+  }
+  img.animation {
+    padding: 0px 250px 0px 250px;
+  }
+  p.case-study-summary {
+    padding: 0px 100px 30px 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img.small-icon {
+    padding-top: none;
+    width: 3%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* desktop */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+  img.logo {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  p.case-study-summary {
-    padding: 20px 0px 0px 0px;
-    line-height: 1.5em;
+  img.small_logo {
+    float: left;
+    width: 100%;
+    padding: 15px 0px 0px 0px;
   }
+
+  div.spacer {
+    height: 1px;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  h3.first_case{
+    margin-top: 0px;
+  }
+
+  a.case-study-button:hover {
+    background-color: #0096c4;
+    color: white;
+  }
+
+  a.button {
+    background-color: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  a.button:hover {
+    background-color: white;
+    color: #bc1b2a;
+  }
+
+  a.prototypebutton:hover {
+    background-color: #bc1b2a;
+    color: white;
+  }
+
+  ul.ulnav {
+    text-align: right;
+  }
+
+  ul.foot {
+    text-align: center;
+  }
+
+  li.nav-list {
+    padding-left: 80px;
+  }
+
+  a.nav-item {
+    font-size: 18px;
+    font-weight: 100;
+    display: block;
+    padding: 0px;
+  }
+
+  ul.casestudy-ulnav {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 15px 0px 15px 20px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  /* hover nav link */
+    a.nav-item::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #0096c4;
+      transition: width .3s;
+    }
+
+    a.nav-item:hover::after {
+      width: 100%;
+      transition: width .3s;
+    }
+
+    div.bio {
+      padding-top: 40px;
+    }
+
+    p.bio-text {
+      padding-left: 0px;
+      padding-right: 60px;
+    }
+
+    img.bio-pic {
+      width: 40%;
+      padding-top: 20px;
+      position: fixed;
+    }
+
+    p.contact-body {
+      padding: 0px;
+    }
+
+    /* Main container for portfolio preview images */
+      .overlay-image {
+        position: relative;
+        width: 100%;
+      }
+
+    /* Original portfolio preview image */
+      .overlay-image .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+    /* Original text overlay for portfolio preview images */
+      .overlay-image .text {
+        color: #ffffff;
+        line-height: 1.5em;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+      }
+
+    /* New overlay on hover for portfolio preview images */
+      .overlay-image .hover-project {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+      }
+
+    /* New overlay appearance on hover for portfolio preview images */
+      .overlay-image:hover .hover-project {
+        opacity: 1;
+      }
+
+    /* Background and text overlay on hover for portfolio preview images */
+      .overlay-image .normal {
+        transition: .5s ease;
+      }
+
+      .overlay-image:hover .normal {
+        opacity: 0;
+      }
+
+      .overlay-image .hover-project {
+        background-color: rgba(0,150,196,0.85);
+      }
+
+      .case-study-title {
+        text-align: left;
+        padding: 100px 0px 0px 0px;
+      }
+
+      p.case-study-summary {
+        padding: 20px 0px 0px 0px;
+        line-height: 1.5em;
+        text-align: left;
+      }
+
+      p.case-study-body {
+        margin: 0px;
+        padding: 0px 0px 10px 0px;
+      }
+
+      p.viewprototype {
+        text-align: left;
+      }
+
+      img.factfig-large1 {
+        width: 97%;
+        padding: 0px;
+        align-items: center;
+      }
+
+      img.factfig-large2 {
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+      }
 }

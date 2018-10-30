@@ -13,6 +13,7 @@ h2 {
   font-weight: 400;
   margin: 0px;
   text-transform: uppercase;
+  padding-left: 20px;
 }
 
 h3 {
@@ -21,16 +22,22 @@ h3 {
   font-weight: 400;
   margin-top: 10px;
   text-transform: none;
+  padding-left: 20px;
 }
 
 div.case-chunk {
   margin-bottom: 30px;
 }
 
-section.banner {
-  background-image: url("../assets/books-01.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-bottom: 40px;
+@media only screen and (min-width : 1024px) {
+  h2, h3 {
+    padding: 0px;
+  }
+  section.banner {
+    background-image: url("../assets/books-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 40px;
+  }
 }
