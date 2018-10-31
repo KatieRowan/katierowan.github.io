@@ -1,0 +1,55 @@
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  text-transform: none;
+  padding-left: 20px;
+}
+
+div.case-chunk {
+  margin-bottom: 40px;
+}
+
+p.bluebox {
+  background-color: #b2dfed;
+  padding-top: 10px;
+  margin: 0px 10px 10px 10px;
+}
+
+p.redbox {
+  padding-top: 10px;
+  background-color: #f1d1d4;
+  margin: 0px 10px 10px 10px;
+}
+
+@media only screen and (min-width : 1024px) {
+  h2, h3 {
+    padding: 0px;
+  }
+  section.banner {
+    background-image: url("../assets/whitedesk.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 40px;
+  }
+}
