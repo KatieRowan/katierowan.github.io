@@ -188,7 +188,7 @@ div.casestudybar {
 }
 
 div.footer {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 a.intextlink:link {
@@ -243,7 +243,7 @@ li.foot-list {
 }
 
 div.bio {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 p.home-bio{
@@ -266,9 +266,7 @@ p.contact-body {
 
 img.bio-pic {
   width: 100%;
-  padding-top: 0px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 20px 0px 20px 0px;
 }
 
 p.case-study-summary {
@@ -559,10 +557,15 @@ img.animation {
       padding-right: 60px;
     }
 
+    p.biofinal {
+      margin-bottom: 0px;
+    }
+
     img.bio-pic {
-      width: 40%;
-      padding-top: 20px;
-      position: fixed;
+      height: auto;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      z-index: -1;
     }
 
     p.contact-body {
@@ -657,5 +660,9 @@ img.animation {
       img.testingsnap2 {
         width: 100%;
         padding: 0px 10px 0px 10px;
+      }
+      div.abouttext {
+        height: 45em;
+        overflow: scroll;
       }
 }
