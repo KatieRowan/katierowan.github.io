@@ -48,7 +48,7 @@ img.logo {
 
 img.small_logo {
   width: 100%;
-  padding: 0px 20px 20px 20px;
+  padding: 20px 30px 10px 30px;
 }
 
 div.spacer {
@@ -127,9 +127,18 @@ a.nav-item {
   font-size: 16px;
   font-weight: 200;
   padding: 20px;
+  line-height: 2em;
 }
 
-li.nav-list {
+#navigation {
+  background-color: #ECECEC;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+li.nav-list, li.cslink {
   text-align: center;
   display: inline-block;
 }
@@ -360,6 +369,8 @@ img.animation {
   padding: 0px 50px 20px 50px;
 }
 
+
+
 /*** MEDIA QUERIES FOR RESPONSIVE SITE ***/
 
 @media only screen and (min-width: 600px) {
@@ -510,6 +521,10 @@ img.animation {
     text-align: right;
   }
 
+  ul.stickynav {
+    text-align: left;
+  }
+
   ul.foot {
     text-align: center;
   }
@@ -518,19 +533,23 @@ img.animation {
     padding-left: 80px;
   }
 
+  li.cslink {
+    padding-right: 60px;
+  }
+
   a.nav-item {
     font-size: 18px;
     font-weight: 100;
     display: block;
     padding: 0px;
+    line-height: 1.5em;
   }
 
-  ul.casestudy-ulnav {
-    text-align: left;
-    background-color: #ffffff;
-    padding: 15px 0px 15px 20px;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
+  ul.stickynav {
+    background-color: #FFFFFF;
+    border-top: 0.5px solid #0096c4;
+    border-bottom: 0.5px solid #0096c4;
+    padding: 10px 0px 10px 20px;
   }
 
   /* hover nav link */
@@ -664,5 +683,19 @@ img.animation {
       div.abouttext {
         height: 45em;
         overflow: scroll;
+      }
+
+      div.stickydiv {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      #navigation {
+        background-color: #FFFFFF;
+      }
+
+      #background, #research, #infoarch, #branding, #mockups, #takeaways {
+        margin-top: -70px;
+        padding-top: 70px;
       }
 }
