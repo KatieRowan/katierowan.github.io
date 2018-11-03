@@ -132,6 +132,7 @@ a.nav-item {
 
 #navigation {
   background-color: #ECECEC;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
