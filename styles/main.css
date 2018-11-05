@@ -139,6 +139,11 @@ a.nav-item {
   margin-bottom: 20px;
 }
 
+#background, #research, #infoarch, #branding, #mockups, #takeaways {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
 li.nav-list, li.cslink {
   text-align: center;
   display: inline-block;
@@ -309,7 +314,7 @@ p.viewprototype {
 
 p.case-study-fact-top {
   line-height: 1.5em;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   font-weight: 300;
   margin: 0px;
