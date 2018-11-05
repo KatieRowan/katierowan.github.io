@@ -352,6 +352,11 @@ img.snapshot {
   padding: 0px 20px 0px 20px;
 }
 
+img.header {
+  width: 100%;
+  padding: 0px;
+}
+
 img.testingsnap {
   width: 100%;
   padding: 0px 50px 20px 50px;
@@ -388,6 +393,16 @@ div.mobileimage {
 section.mobilebanner {
   display: block;
   text-align: center;
+}
+
+div.desktopbanner {
+  display: none;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 /*** MEDIA QUERIES FOR RESPONSIVE SITE ***/
@@ -685,7 +700,7 @@ section.mobilebanner {
 
       .case-study-title {
         text-align: left;
-        padding: 100px 0px 0px 0px;
+        padding-top: 30px;
       }
 
       p.case-study-summary {
@@ -740,5 +755,10 @@ section.mobilebanner {
 
       section.mobilebanner {
         display: none;
+      }
+
+      div.desktopbanner {
+        display: inline-block;
+        height: 100%;
       }
 }

@@ -34,10 +34,6 @@ div.case-chunk {
     padding: 0px;
   }
   section.banner {
-    background-image: url("../assets/primaryheader.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
   }
 }

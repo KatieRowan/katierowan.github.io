@@ -46,10 +46,6 @@ p.redbox {
     padding: 0px;
   }
   section.banner {
-    background-image: url("../assets/showcaseheader.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
