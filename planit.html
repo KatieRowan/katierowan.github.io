@@ -9,12 +9,11 @@
   <meta name="keywords" content="HTML,CSS,JavaScript">
   <meta name="author" content="Katie Rowan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="stylesheet" type="text/css" href="styles/planit.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/planit.css"/>
   <link rel="stylesheet" href="aos-master/dist/aos.css"/>
   <script src="aos-master/dist/aos.js"></script>
   <script src="scripts/index.js"></script>
@@ -37,6 +36,11 @@
     </div>
     <div class="col-1 spacer"></div>
   </nav>
+
+  <!--MOBILE BANNER-->
+  <section class="row mobilebanner">
+    <img src="assets/planitmobileheader.png" class="snapshot"></img>
+  </section>
 
 <!--HEADER-->
   <section class="row banner">
@@ -113,7 +117,7 @@
       <div class="col-1"></div>
       <div class="col-3">
         <p class="case-study-fact-top">What is your favorite tracking app/website?</p>
-        <img src="assets/planchart2.png" class="factfig-large2"/>
+        <img src="assets/planchart2.png" class="factfig-large1"/>
       </div>
       <div class="col-2 spacer"></div>
     </section>
@@ -168,7 +172,7 @@
       <div class="col-2">
         <img src="assets/Meg.jpg" class="userimage"/>
       </div>
-      <div class="col-5"><p class="case-study-body">The Typical Student: Meg, an 8th grade student. Her biggest struggle is remembering everything she needs to bring home to successfully complete her homework. She often forgets things in her locker, resulting in evening trips back to school.</p></div>
+      <div class="col-5"><p class="case-study-body"><b>The Typical Student:</b> Meg, an 8th grade student. Her biggest struggle is remembering everything she needs to bring home to successfully complete her homework. She often forgets things in her locker, resulting in evening trips back to school.</p></div>
       <div class="col-2 spacer"></div>
     </section>
     <section class="row">
@@ -176,7 +180,7 @@
       <div class="col-2">
         <img src="assets/Carrie.jpg" class="userimage"/>
       </div>
-      <div class="col-5"><p class="case-study-body">The Graduate Student: Carrie, a 27-year-old woman who is working on her Master's Degree. She likes using a calendar to keep track of assignments, but finds it difficult to stay on top of long-term deadlines.</p></div>
+      <div class="col-5"><p class="case-study-body"><b>The Graduate Student:</b> Carrie, a 27-year-old woman who is working on her Master's Degree. She likes using a calendar to keep track of assignments, but finds it difficult to stay on top of long-term deadlines.</p></div>
       <div class="col-2 spacer"></div>
     </section>
     <section class="row">
@@ -184,7 +188,7 @@
       <div class="col-2">
         <img src="assets/Craig.jpg" class="userimage"/>
       </div>
-      <div class="col-5"><p class="case-study-body">The Teacher: Craig, a 26-year-old high school science teacher. He wants to help his students learn executive functioning skills before they head off to college. Since his students are "always on their phones," he thinks it's important that they use their phones for keeping track of homework.</p></div>
+      <div class="col-5"><p class="case-study-body"><b>The Teacher:</b> Craig, a 26-year-old high school science teacher. He wants to help his students learn executive functioning skills before they head off to college. Since his students are "always on their phones," he thinks it's important that they use their phones for keeping track of homework.</p></div>
       <div class="col-2 spacer"></div>
     </section>
   </div>
@@ -206,7 +210,7 @@
         <p class="case-study-body">I dropped these into a <a href="https://invis.io/7ZOTYLZ8N6Q" target="_blank" class="intextlink">lo-fi invision prototype</a> for some testing. From here, I reworked my wireframes based on feedback. One of the largest iterations I made at this early stage was trying out two layouts for the homepage: a list view v. a card-based view. As you'll see, the card view ended up being more successful and this home layout was introduced in the high-fidelity wireframes.</p>
         <img src="assets/planitsketchtowireframe.jpg" class="snapshot"></img>
         <h3>High Fidelity Wireframes</h3>
-        <p class="case-study-body">I used Sketch to create high-fidelity wireframes, and uploaded them into another <a href="https://invis.io/RZOTYNDVTSF" target="_blank" class="intextlink">invision prototype.</a> I used this hi-fi invision prototype with <a href="https://maze.design/" target="_blank" class="intextlink">Maze</a> to conduct testing.</p>
+        <p class="case-study-body">I used Sketch to create high-fidelity wireframes, and uploaded them into another <a href="https://invis.io/RZOTYNDVTSF" target="_blank" class="intextlink">invision prototype.</a> I used this hi-fi invision prototype with <a href="https://maze.design/" target="_blank" class="intextlink">Maze.design</a> to conduct testing.</p>
         <img src="assets/planitwireframes-01.jpg" class="snapshot"></img>
       </div>
       <div class="col-2 spacer"></div>
@@ -227,7 +231,7 @@
         <img src="assets/planitheatmap1.png" class="testingsnap"></img>
       </div>
       <div class="col-5">
-        <p class="case-study-body"><b>The tab bar was confusing.</b> In the first iteration of the app, I made the tab bar buttons action items (e.g. "+ Assessment"). During testing, I noticed multiple users thinking that these tab bar buttons would lead to a more informative page (when asked to view all upcoming assessments, they would click the "+ Assessment" button).</p>
+        <p class="case-study-body"><b>Problem #1:</b> The tab bar was confusing. In the first iteration of the app, I made the tab bar buttons action items (e.g. "+ Assessment"). During testing, I noticed multiple users thinking that these tab bar buttons would lead to a more informative page (when asked to view all upcoming assessments, they would click the "+ Assessment" button).</p>
       </div>
       <div class="col-2 spacer"></div>
     </section>
@@ -238,7 +242,7 @@
         <img src="assets/planitbackpacknoman.png" class="testingsnap"></img>
       </div>
       <div class="col-5">
-        <p class="case-study-body"><b>The backpack feature was in no-man's land.</b> In my wireframes, I had the backpack icon up in the top right corner of the app. This icon would lead users to a list of supplies they needed to bring home at the end of each day. As the tab bar changed, however, it didn't make sense to separate the backpack view from the rest of the tab bar items.</p>
+        <p class="case-study-body"><b>Problem #2:</b> The backpack feature was in no-man's land. In my wireframes, I had the backpack icon up in the top right corner of the app. This icon would lead users to a list of supplies they needed to bring home at the end of each day. As the tab bar changed, however, it didn't make sense to separate the backpack view from the rest of the tab bar items.</p>
       </div>
       <div class="col-2 spacer"></div>
     </section>
@@ -249,7 +253,7 @@
         <img src="assets/planit_iteration1.png" class="testingsnap"></img>
       </div>
       <div class="col-5">
-        <p class="case-study-body"><b>Iteration:</b> I changed the tab bar so that clicking an icon would lead the user to a "view all" screen. From that screen, they could then add a new assignment or assessment. I also nested the backpack feature into the tab bar, so the user could easily browse their home screen, assignments, assessments, and backpack from one navigation area.</p>
+        <p class="case-study-body"><b>Iterations:</b> I changed the tab bar so that clicking an icon would lead the user to a "view all" screen. From that screen, they could then add a new assignment or assessment. I also nested the backpack feature into the tab bar, so the user could easily browse their home screen, assignments, assessments, and backpack from one navigation area.</p>
       </div>
       <div class="col-2 spacer"></div>
     </section>
@@ -414,7 +418,7 @@
         <p class="case-study-body">Research needs to inform design decisions. Jumping ahead in the design process doesn’t save time. The most successful aspects of PlanIt's design came when I took time to really listen to what people needed. Multiple iterations resulted in a stronger end product.</p>
         <h3>2. Question assumptions.</h3>
         <p class="case-study-body">I used to work in the education sphere, so I came to the table with a fair number of assumptions. A good designer questions their biases. Even if some of my ideas turned out to be right, it was important for me to confirm through testing and research. When my assumptions were wrong, I needed to be flexible and adapt my ideas to fit the needs of others.</p>
-        <h3>3. Cliches aside, less really is more sometimes.</h3>
+        <h3>3. Clich‌&eacutes aside, less really is more sometimes.</h3>
         <p class="case-study-body">My first stab at iOS design was too colorful and cluttered. I took time to read over the iOS style guide and looked to other apps for inspiration. This led to a much cleaner design that allowed for better legibility and a more modern, mature feel.</p>
       </div>
       <div class="col-2 spacer"></div>

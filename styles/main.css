@@ -202,24 +202,27 @@ div.footer {
 }
 
 a.intextlink:link {
+  font-weight: 400;
   text-decoration: none;
   color: #0096c4;
 }
 
 a.intextlink:visited {
+  font-weight: 400;
   text-decoration: none;
   color: #0096c4;
 }
 
 a.intextlink:hover {
   font-weight: 400;
+  color: #004b62;
 }
 
 /*unvisited nav link*/
 a.nav-item:link {
   color: black;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 a.current:link {
@@ -292,6 +295,10 @@ p.case-study-body {
   padding: 0px 20px 10px 20px;
 }
 
+p.iterations {
+  text-align: center;
+}
+
 p.centered {
   text-align: center;
 }
@@ -304,7 +311,7 @@ p.case-study-fact-top {
   line-height: 1.5em;
   text-align: center;
   font-size: 16px;
-  font-style: italic;
+  font-weight: 300;
   margin: 0px;
   padding: 0px 0px 10px 0px;
 }
@@ -313,7 +320,7 @@ p.case-study-fact-bot {
   line-height: 1.5em;
   text-align: center;
   font-size: 16px;
-  font-style: italic;
+  font-weight: 300;
   margin: 0px;
   padding: 10px 0px 0px 0px;
 }
@@ -324,13 +331,13 @@ img.factfig {
 }
 
 img.factfig-large1 {
-  width: 97%;
+  width: 100%;
   padding: 0px 20px 0px 20px;
   align-items: center;
 }
 
 img.factfig-large2 {
-  width: 100%;
+  width: 90%;
   padding: 0px 20px 0px 20px;
   align-items: center;
 }
@@ -370,7 +377,18 @@ img.animation {
   padding: 0px 50px 20px 50px;
 }
 
+div.desktopimage {
+  display: none;
+}
 
+div.mobileimage {
+  display: block;
+}
+
+section.mobilebanner {
+  display: block;
+  text-align: center;
+}
 
 /*** MEDIA QUERIES FOR RESPONSIVE SITE ***/
 
@@ -378,6 +396,10 @@ img.animation {
   img.logo {
     padding-left: 150px;
     padding-right: 150px;
+  }
+  section.mobilebanner {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -428,6 +450,13 @@ img.animation {
   p.case-study-summary {
     padding: 0px 100px 30px 100px;
   }
+  div.desktopimage {
+    display: block;
+  }
+
+  div.mobileimage {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -453,8 +482,8 @@ img.animation {
     .col-12 {width: 100%;}
 
   img.logo {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   img.small_logo {
@@ -540,7 +569,7 @@ img.animation {
 
   a.nav-item {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     display: block;
     padding: 0px;
     line-height: 1.5em;
@@ -551,6 +580,14 @@ img.animation {
     border-top: 0.5px solid #0096c4;
     border-bottom: 0.5px solid #0096c4;
     padding: 10px 0px 10px 20px;
+  }
+
+  div.desktopimage {
+    display: block;
+  }
+
+  div.mobileimage {
+    display: none;
   }
 
   /* hover nav link */
@@ -667,16 +704,17 @@ img.animation {
       }
 
       img.factfig-large1 {
-        width: 97%;
+        width: 100%;
         padding: 0px;
         align-items: center;
       }
 
       img.factfig-large2 {
-        width: 100%;
+        width: 90%;
         padding: 0px;
         align-items: center;
       }
+
       img.testingsnap2 {
         width: 100%;
         padding: 0px 10px 0px 10px;
@@ -698,5 +736,9 @@ img.animation {
       #background, #research, #infoarch, #branding, #mockups, #takeaways {
         margin-top: -70px;
         padding-top: 70px;
+      }
+
+      section.mobilebanner {
+        display: none;
       }
 }
